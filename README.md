@@ -5,7 +5,7 @@ This repository contains a Simple Employee Management System (EMS) developed usi
 1. Import the database **.sql** file located in **db/db.sql**.
 2. Ensure the database name is set to **ems**. If you choose a different name, edit **config/db.php** and update the connection string: 
 ```
-**$con = mysqli_connect("localhost","root","","NAMEHERE");**.
+$con = mysqli_connect("localhost","root","","NAMEHERE");
 ```
 ## Data Generation (Optional):
 1. Alternatively, you can generate your own data by running the Python script located in **db/db.py**.
