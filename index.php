@@ -401,11 +401,12 @@ $totalPages = ceil($totalRecords / $limit);  //Calculate Total Pages
 		var age = today.getFullYear() - bday.getFullYear(); //Calculate Age
 		var m = today.getMonth() - bday.getMonth(); //Calculate Month
         let validationPassed = true; //Set default value of condition to true
-		var bday = document.getElementById('bday-'+id).value;
-
 		if (m < 0 || (m === 0 && today.getDate() < bday.getDate())) {
 			age--;
 		} //If the month is less than 0 or the month is equal to 0 and the date is less than the birthdate, then the age is decremented by 1
+		
+		
+		bday = document.getElementById('bday-'+id).value;
 
 		if (name === '') {
 			$('#name-'+id).popover('show');
@@ -517,11 +518,12 @@ $totalPages = ceil($totalRecords / $limit);  //Calculate Total Pages
 		var age = today.getFullYear() - bday.getFullYear(); //Calculate Age
 		var m = today.getMonth() - bday.getMonth(); //Calculate Month
         let validationPassed = true;
-		var bday = document.getElementById('bdayAdd').value;
 
 		if (m < 0 || (m === 0 && today.getDate() < bday.getDate())) {
 			age--;
 		} //If the month is less than 0 or the month is equal to 0 and the date is less than the birthdate, then the age is decremented by 1
+		
+		bday = document.getElementById('bdayAdd').value;
 
 		if (name === '') {
 			Swal.fire({
