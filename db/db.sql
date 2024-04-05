@@ -22,10 +22,10 @@ DROP TABLE IF EXISTS `ems_data`;
 
 CREATE TABLE `ems_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) DEFAULT NULL,
+  `name` varchar(10) DEFAULT NULL,
   `age` int(3) DEFAULT NULL,
   `position` enum('CEO','CFO','CMO','COO','Human Resources','IT Manager','Marketing Manager','Product Manager','Sales Manager','Admin Assistant','Accountant','Bookkeeper','Business Analyst','Sales Representative','Jr Software Engineer','Sr Software Engineer') DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL,
+  `emial` varchar(50) DEFAULT NULL,
   `salary` double(11,2) DEFAULT NULL,
   `bday` date DEFAULT NULL,
   `gender` enum('Male','Female') DEFAULT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE `ems_data` (
   `number` varchar(11) DEFAULT NULL,
   `endcontract` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=103 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 /*Data for the table `ems_data` */
 

@@ -15,7 +15,7 @@ $number = $_POST['number'];
 $endcontract = $_POST['endcontract'];
 
 $update_stmt = $con->prepare("UPDATE ems_data SET name = ?, age = ?, position = ?, email = ?, salary = ?, bday = ?, gender = ?, status = ?, number = ?, endcontract = ? WHERE id = ?");
-$update_stmt->bind_param("ssssdssssss", $name, $age, $position, $email, $salary, $bday, $gender, $status, $number, $endcontract, $id);
+$update_stmt->bind_param("sssdssss", $name, $age, $position, $email, $salary, $bday, $gender, $status, $number, $endcontract, $id);
 $update_stmt->execute();
 $update_stmt->close();
 
